@@ -1,0 +1,411 @@
+/* ─── Skeleton loader ─────────────────────────────────── */
+@keyframes ad-shimmer {
+  0% { background-position: -600px 0; }
+  100% { background-position: 600px 0; }
+}
+
+.ad-skeleton {
+  padding: 32px;
+}
+
+.ad-sk-bar,
+.ad-sk-card {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 600px 100%;
+  animation: ad-shimmer 1.4s infinite linear;
+  border-radius: 8px;
+}
+
+.ad-sk-title {
+  height: 32px;
+  width: 280px;
+  margin-bottom: 24px;
+}
+
+.ad-sk-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.ad-sk-card {
+  height: 100px;
+  border-radius: 12px;
+}
+
+.ad-sk-bar {
+  height: 18px;
+  margin-bottom: 12px;
+}
+
+.ad-sk-short {
+  width: 60%;
+}
+
+/* ─── Dashboard shell ─────────────────────────────────── */
+.account-dashboard-jg {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+  font-family: inherit;
+  color: var(--text-color, #111);
+}
+
+/* ─── Header ──────────────────────────────────────────── */
+.ad-header {
+  margin-bottom: 32px;
+}
+
+.ad-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 0 6px;
+  color: var(--text-color, #111);
+}
+
+.ad-welcome {
+  margin: 0;
+  font-size: 15px;
+  color: var(--text-color, #111);
+  opacity: 0.65;
+}
+
+/* ─── Stat cards ──────────────────────────────────────── */
+.ad-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.ad-stat-card {
+  background: var(--color-neutral-100, #f7f7f7);
+  border-radius: 14px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid var(--color-neutral-200, #ebebeb);
+}
+
+.ad-stat-value {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-color, #111);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ad-stat-top-product {
+  font-size: 15px;
+  line-height: 1.4;
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.ad-stat-label {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--text-color, #111);
+  opacity: 0.5;
+}
+
+/* ─── Sections ────────────────────────────────────────── */
+.ad-section {
+  margin-bottom: 40px;
+}
+
+.ad-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.ad-section-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 16px;
+  color: var(--text-color, #111);
+}
+
+.ad-section-header .ad-section-title {
+  margin: 0;
+}
+
+.ad-view-all {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-brand-1000, #000);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ad-view-all:hover {
+  text-decoration: underline;
+}
+
+/* ─── Tables ──────────────────────────────────────────── */
+.ad-table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid var(--color-neutral-200, #ebebeb);
+}
+
+.ad-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.ad-table thead tr {
+  background: var(--color-neutral-100, #f7f7f7);
+}
+
+.ad-table th {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-color, #111);
+  opacity: 0.55;
+  white-space: nowrap;
+}
+
+.ad-table td {
+  padding: 14px 16px;
+  border-top: 1px solid var(--color-neutral-200, #ebebeb);
+  color: var(--text-color, #111);
+  vertical-align: middle;
+}
+
+.ad-table tbody tr:hover {
+  background: var(--color-neutral-100, #f7f7f7);
+}
+
+/* ─── Status badges ───────────────────────────────────── */
+.ad-status {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+  background: var(--color-neutral-200, #e8e8e8);
+  color: var(--text-color, #111);
+}
+
+.ad-status--complete,
+.ad-status--approved {
+  background: #d4edda;
+  color: #1a5c2a;
+}
+
+.ad-status--pending,
+.ad-status--pending-payment,
+.ad-status--pending-approval {
+  background: #fff3cd;
+  color: #7a5800;
+}
+
+.ad-status--processing {
+  background: #d1ecf1;
+  color: #0c4f5c;
+}
+
+.ad-status--canceled,
+.ad-status--rejected {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+/* ─── Links ───────────────────────────────────────────── */
+.ad-link {
+  color: var(--color-brand-1000, #000);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ad-link:hover {
+  text-decoration: underline;
+}
+
+/* ─── Most Purchased Products ─────────────────────────── */
+.ad-top-products {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--color-neutral-200, #ebebeb);
+  border-radius: 12px;
+  overflow: hidden;
+  counter-reset: product-rank;
+}
+
+.ad-top-product {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 20px;
+  border-top: 1px solid var(--color-neutral-200, #ebebeb);
+  font-size: 14px;
+  counter-increment: product-rank;
+}
+
+.ad-top-product:first-child {
+  border-top: none;
+}
+
+.ad-top-product::before {
+  content: counter(product-rank);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--color-neutral-200, #ebebeb);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-color, #111);
+  flex-shrink: 0;
+}
+
+
+.ad-top-product:first-child::before {
+  background: var(--color-brand-1000, #000);
+  color: var(--background-color, #fff);
+}
+
+.ad-tp-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.ad-tp-name {
+  font-weight: 600;
+  color: var(--text-color, #111);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ad-tp-sku {
+  font-size: 12px;
+  color: var(--text-color, #111);
+  opacity: 0.5;
+}
+
+.ad-tp-qty {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-color, #111);
+  opacity: 0.65;
+  white-space: nowrap;
+}
+
+/* ─── Empty / error / login states ───────────────────────── */
+.ad-empty {
+  color: var(--text-color, #111);
+  opacity: 0.5;
+  font-size: 14px;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.ad-error {
+  color: #c62828;
+  font-size: 14px;
+  padding: 16px;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+  background: #fdf0f0;
+}
+
+.ad-unauthenticated {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.ad-login-prompt {
+  text-align: center;
+  max-width: 380px;
+}
+
+.ad-login-prompt h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.ad-login-prompt p {
+  font-size: 15px;
+  opacity: 0.7;
+  margin: 0 0 24px;
+  line-height: 1.6;
+}
+
+.ad-login-btn {
+  display: inline-block;
+  padding: 13px 32px;
+  background: var(--color-brand-1000, #000);
+  color: var(--background-color, #fff);
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.ad-login-btn:hover {
+  opacity: 0.78;
+}
+
+/* ─── Responsive ──────────────────────────────────────── */
+@media (max-width: 900px) {
+  .ad-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .account-dashboard-jg {
+    padding: 20px 16px 48px;
+  }
+
+  .ad-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .ad-stat-value {
+    font-size: 20px;
+  }
+
+  .ad-table th,
+  .ad-table td {
+    padding: 10px 12px;
+  }
+
+  .ad-sk-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
