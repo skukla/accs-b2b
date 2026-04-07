@@ -1,0 +1,51 @@
+.cards-jg-container .cards-jg-wrapper {
+  margin-top: var(--spacing-xbig);
+}
+
+.cards-jg > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+  gap: var(--spacing-medium);
+}
+
+.cards-jg > ul > li {
+  border: var(--shape-border-width-1) solid var(--color-neutral-500);
+  background-color: var(--background-color);
+  overflow: hidden;
+}
+
+.cards-jg .cards-jg-image {
+  line-height: 0;
+}
+
+.cards-jg .cards-jg-image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.cards-jg .cards-jg-body {
+  margin: var(--spacing-small);
+}
+
+.cards-jg .cards-jg-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: inherit;
+}
+
+.cards-jg .cards-jg-body-text {
+  color: inherit;
+}
+
+.cards-jg .cards-jg-body-text p {
+  margin: 0 0 8px;
+}
+
+.cards-jg .cards-jg-body-text p:last-child {
+  margin-bottom: 0;
+}

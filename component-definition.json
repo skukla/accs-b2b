@@ -549,6 +549,138 @@
               "type": "key-value-block"
             }
           }
+        },
+        {
+          "title": "Blog Tiles",
+          "id": "blog-tiles",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"blog-tiles\"><div><div><p>Category</p></div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Hero V2",
+          "id": "hero-v2",
+          "model": "hero-v2",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>picture:nth-child(1)>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>picture:nth-child(1)>img[alt]"
+                },
+                {
+                  "name": "title",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>h2:nth-child(2)"
+                },
+                {
+                  "name": "subtitle",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>h3:nth-child(3)"
+                },
+                {
+                  "name": "description",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>p:nth-child(4)"
+                },
+                {
+                  "name": "ctaLabel",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>p:nth-child(5)>a:nth-child(1)"
+                },
+                {
+                  "name": "ctaUrl",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>p:nth-child(5)>a:nth-child(1)[href]"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Quote",
+          "id": "quote",
+          "model": "quote",
+          "plugins": {
+            "da": {
+              "name": "quote",
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "quote",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>p:nth-child(1)"
+                },
+                {
+                  "name": "author",
+                  "selector": "div:nth-child(2)>div:nth-child(1)>p:nth-child(1)"
+                }
+              ],
+              "unsafeHTML": "<div class=\"quote\"><div><div><p>Design is not just what it looks like. Design is how it works.</p></div><div><p>Steve Jobs</p></div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Tabs",
+          "id": "tabs",
+          "model": "tabs",
+          "filter": "tabs",
+          "plugins": {
+            "da": {
+              "columns": 1,
+              "rows": 2
+            }
+          }
+        },
+        {
+          "title": "Tabs Item",
+          "id": "tabs-item",
+          "model": "tabs-item",
+          "plugins": {
+            "da": {
+              "columns": 0,
+              "rows": 2,
+              "fields": [
+                {
+                  "name": "name",
+                  "selector": "div:nth-child(1)>p:nth-child(1)"
+                },
+                {
+                  "name": "content",
+                  "selector": "div:nth-child(2)"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Video",
+          "id": "video",
+          "model": "video",
+          "plugins": {
+            "da": {
+              "name": "video",
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "videoUrl",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>p:nth-child(1)>a:nth-child(1)[href]"
+                },
+                {
+                  "name": "videoUrlText",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>p:nth-child(1)>a:nth-child(1)"
+                },
+                {
+                  "name": "posterImage",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>picture:nth-child(2)>img:nth-child(3)[src]"
+                }
+              ]
+            }
+          }
         }
       ]
     },
@@ -583,6 +715,116 @@
           "plugins": {
             "da": {
               "type": "key-value-block"
+            }
+          }
+        },
+        {
+          "title": "Product Teaser",
+          "id": "product-teaser",
+          "model": "product-teaser",
+          "plugins": {
+            "da": {
+              "type": "key-value-block"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "custom-blocks-jg",
+      "title": "Custom Blocks (JG)",
+      "components": [
+        {
+          "title": "Hero (JPG)",
+          "id": "hero-jg",
+          "model": "hero-jg",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>picture:nth-child(1)>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>picture:nth-child(1)>img[alt]"
+                },
+                {
+                  "name": "title",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>h2:nth-child(2)"
+                },
+                {
+                  "name": "subtitle",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>h3:nth-child(3)"
+                },
+                {
+                  "name": "description",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>p:nth-child(4)"
+                },
+                {
+                  "name": "ctaLabel",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>p:nth-child(5)>a:nth-child(1)"
+                },
+                {
+                  "name": "ctaUrl",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>p:nth-child(5)>a:nth-child(1)[href]"
+                },
+                {
+                  "name": "text-color",
+                  "selector": "div:nth-child(2)>div:nth-child(2)"
+                },
+                {
+                  "name": "cta-button-opacity",
+                  "selector": "div:nth-child(3)>div:nth-child(2)"
+                }
+              ],
+              "unsafeHTML": "<div class=\"hero-jg\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture><h2>Hero Title</h2><h3>Subtitle</h3><p>A short description of the hero section.</p><p><a href=\"#\">Learn More</a></p></div></div><div><div>text-color</div><div>#ffffff</div></div><div><div>cta-button-opacity</div><div>24</div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Cards (JPG)",
+          "id": "cards-jg",
+          "filter": "cards-jg",
+          "plugins": {
+            "da": {
+              "title": "Cards V3",
+              "rows": 1,
+              "columns": 5,
+              "unsafeHTML": "<div class=\"cards-jg\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div>Card Title</div><div><p>Card body text goes here.</p></div><div>#f5f5f5</div><div>#333333</div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Product Teaser (JPG)",
+          "id": "product-teaser-jg",
+          "model": "product-teaser-jg",
+          "plugins": {
+            "da": {
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"product-teaser-jg\"><div><div>sku</div><div>YOUR-SKU-HERE</div></div><div><div>details-button</div><div>true</div></div><div><div>cart-button</div><div>true</div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Promotional Hero (JPG)",
+          "id": "promotional-hero-jg",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"promotional-hero-jg\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div><h2></h2><p></p></div><div><p></p></div></div><div><div>cta-button-color</div><div></div></div><div><div>cta-text-color</div><div></div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Age Gate (JPG)",
+          "id": "age-gate-jg",
+          "model": "age-gate-jg",
+          "plugins": {
+            "da": {
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"age-gate-jg\"><div><div>minimum-age</div><div>21</div></div><div><div>heading</div><div>Age Verification Required</div></div><div><div>subheading</div><div></div></div><div><div>input-label</div><div>Enter your date of birth</div></div><div><div>button-text</div><div>Submit</div></div></div>"
             }
           }
         }
