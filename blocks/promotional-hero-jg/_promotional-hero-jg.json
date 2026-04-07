@@ -1,0 +1,20 @@
+{
+  "definitions": [
+    {
+      "title": "Promotional Hero (JPG)",
+      "id": "promotional-hero-jg",
+      "plugins": {
+        "da": {
+          "unsafeHTML": "<div class=\"promotional-hero-jg\"><div><div><picture><source type=\"image/webp\" srcset=\"\"><source type=\"image/jpeg\" srcset=\"\"><img loading=\"lazy\"></picture></div><div><h2></h2><p></p></div><div><p></p></div></div><div><div>cta-button-color</div><div></div></div><div><div>cta-text-color</div><div></div></div></div>"
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "promotional-hero-jg",
+      "fields": []
+    }
+  ],
+  "filters": []
+}
