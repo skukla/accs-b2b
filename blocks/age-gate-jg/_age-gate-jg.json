@@ -1,0 +1,71 @@
+{
+  "definitions": [
+    {
+      "title": "Age Gate (JPG)",
+      "id": "age-gate-jg",
+      "model": "age-gate-jg",
+      "plugins": {
+        "da": {
+          "type": "key-value-block"
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "age-gate-jg",
+      "fields": [
+        {
+          "component": "text",
+          "name": "minimum-age",
+          "label": "Minimum Age Requirement (e.g. 16, 18, 21, 25)",
+          "valueType": "string",
+          "value": "21"
+        },
+        {
+          "component": "text",
+          "name": "heading",
+          "label": "Heading",
+          "valueType": "string",
+          "value": "Age Verification Required"
+        },
+        {
+          "component": "text",
+          "name": "subheading",
+          "label": "Subheading (leave blank to auto-generate from minimum age)",
+          "valueType": "string",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "name": "input-label",
+          "label": "Input Field Label",
+          "valueType": "string",
+          "value": "Enter your date of birth"
+        },
+        {
+          "component": "text",
+          "name": "button-text",
+          "label": "Button Text",
+          "valueType": "string",
+          "value": "Submit"
+        },
+        {
+          "component": "text",
+          "name": "underage-message",
+          "label": "Underage Message (leave blank to auto-generate from minimum age)",
+          "valueType": "string",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "name": "legal-text",
+          "label": "Legal Text",
+          "valueType": "string",
+          "value": "By entering this site you agree to our Terms of Use and Privacy Policy."
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
