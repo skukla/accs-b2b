@@ -1,4 +1,2 @@
 mountpoints:
-  /:
-    url: https://content.da.live/skukla/b2b-content/
-    type: markup
+  /: https://content.da.live/skukla/b2b-content/
