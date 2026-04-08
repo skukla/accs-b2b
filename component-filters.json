@@ -43,7 +43,13 @@
       "product-list-page",
       "product-recommendations",
       "targeted-block",
-      "text"
+      "text",
+      "hero-v2",
+      "product-teaser",
+      "quote",
+      "tabs",
+      "video",
+      "blog-tiles"
     ]
   },
   {
@@ -79,6 +85,34 @@
     "components": [
       "text",
       "image"
+    ]
+  },
+  {
+    "id": "tabs",
+    "components": [
+      "tabs-item"
+    ]
+  },
+  {
+    "id": "circle-carousel",
+    "components": [
+      "circle-carousel-item"
+    ]
+  },
+  {
+    "id": "search-bar",
+    "components": []
+  },
+  {
+    "id": "store-locator",
+    "components": [
+      "store-locator-item"
+    ]
+  },
+  {
+    "id": "cards-jg",
+    "components": [
+      "card-jg"
     ]
   }
 ]
