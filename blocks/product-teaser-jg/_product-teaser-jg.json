@@ -1,0 +1,50 @@
+{
+  "definitions": [
+    {
+      "title": "Product Teaser (JPG)",
+      "id": "product-teaser-jg",
+      "model": "product-teaser-jg",
+      "plugins": {
+        "da": {
+          "type": "key-value-block"
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "product-teaser-jg",
+      "fields": [
+        {
+          "component": "text",
+          "name": "sku",
+          "label": "Product SKU",
+          "required": true
+        },
+        {
+          "component": "boolean",
+          "name": "details-button",
+          "label": "Show Details Button",
+          "valueType": "boolean"
+        },
+        {
+          "component": "boolean",
+          "name": "cart-button",
+          "label": "Show Add to Cart Button",
+          "valueType": "boolean"
+        },
+        {
+          "component": "text",
+          "name": "background-color",
+          "label": "Card Background Color (e.g. #ffffff or red)"
+        },
+        {
+          "component": "text",
+          "name": "text-color",
+          "label": "Card Text Color (e.g. #000000 or black)"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

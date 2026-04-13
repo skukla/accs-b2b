@@ -56,7 +56,8 @@
             "da": {
               "name": "accordion",
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"accordion\"><div><div><h3>FAQ Question</h3></div><div><p>Answer content goes here.</p></div></div><div><div><h3>Another Question</h3></div><div><p>More details here.</p></div></div></div>"
             }
           }
         },
@@ -78,7 +79,8 @@
                   "name": "text",
                   "selector": "div:nth-child(2)"
                 }
-              ]
+              ],
+              "unsafeHTML": "<div class=\"accordion-item\"><div><div>Question or summary heading</div></div><div><div><p>Detailed answer or body content goes here.</p></div></div></div>"
             }
           }
         },
@@ -90,7 +92,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"cards\"><div><div><picture><img src=\"/content/dam/demo/placeholder.png\" alt=\"Card image\"></picture></div><div><h3>Card Title</h3><p>Card description text.</p></div></div></div>"
             }
           }
         },
@@ -115,7 +118,8 @@
                   "name": "text",
                   "selector": "div:nth-child(2)"
                 }
-              ]
+              ],
+              "unsafeHTML": "<div class=\"card\"><div><div><picture><img src=\"\" alt=\"Card image\"></picture></div><div><h3>Card Title</h3><p>Card description text.</p><p><a href=\"#\">Learn more</a></p></div></div></div>"
             }
           }
         },
@@ -127,7 +131,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"carousel\"><div><div><picture><img src=\"\" alt=\"Slide background\"></picture></div><div><h2>Slide Heading</h2><p>Slide description text.</p><p><a href=\"#\">CTA Link</a></p></div></div></div>"
             }
           }
         },
@@ -152,7 +157,8 @@
                   "name": "text",
                   "selector": "div:nth-child(2)"
                 }
-              ]
+              ],
+              "unsafeHTML": "<div class=\"carousel-item\"><div><div><picture><img src=\"\" alt=\"Slide background image\"></picture></div><div><h2>Slide Heading</h2><p>Slide description text.</p><p><a href=\"#\">CTA Link</a></p></div></div></div>"
             }
           }
         },
@@ -166,7 +172,8 @@
               "name": "columns",
               "rows": 1,
               "columns": 2,
-              "behaviour": "columns"
+              "behaviour": "columns",
+              "unsafeHTML": "<div class=\"columns\"><div><div><p>Column 1 content</p></div><div><p>Column 2 content</p></div></div></div>"
             }
           }
         },
@@ -178,7 +185,8 @@
           "plugins": {
             "da": {
               "name": "columns-row",
-              "behaviour": "columns-row"
+              "behaviour": "columns-row",
+              "unsafeHTML": "<div class=\"columns-row\"><div><div>Content</div></div></div>"
             }
           }
         },
@@ -200,7 +208,8 @@
           "model": "enrichment",
           "plugins": {
             "da": {
-              "type": "key-value-block"
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"enrichment\"><div><div>type</div><div>product</div></div><div><div>position</div><div>1</div></div></div>"
             }
           }
         },
@@ -221,7 +230,8 @@
                   "name": "fragmentUrlText",
                   "selector": "div>div>p>a"
                 }
-              ]
+              ],
+              "unsafeHTML": "<div class=\"fragment\"><div><div><p><a href=\"/path/to/fragment\">Fragment URL</a></p></div></div></div>"
             }
           }
         },
@@ -246,7 +256,8 @@
                   "name": "text",
                   "selector": "div>div>h1"
                 }
-              ]
+              ],
+              "unsafeHTML": "<div class=\"hero\"><div><div><picture><img src=\"/content/dam/demo/placeholder.png\" alt=\"Hero image\"></picture></div><div><h1>Hero Heading</h1><p>Hero description text.</p></div></div></div>"
             }
           }
         },
@@ -256,7 +267,8 @@
           "model": "targeted-block",
           "plugins": {
             "da": {
-              "type": "key-value-block"
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"targeted-block\"><div><div>content</div><div></div></div><div><div>customer-groups</div><div></div></div><div><div>type</div><div></div></div></div>"
             }
           }
         },
@@ -266,7 +278,8 @@
           "model": "commerce-account-header",
           "plugins": {
             "da": {
-              "type": "key-value-block"
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"commerce-account-header\"><div><div>title</div><div>My Account</div></div></div>"
             }
           }
         },
@@ -277,7 +290,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-account-sidebar\"><div><div>Account navigation sidebar - loads from fragment</div></div></div>"
             }
           }
         },
@@ -287,7 +301,8 @@
           "model": "commerce-addresses",
           "plugins": {
             "da": {
-              "type": "key-value-block"
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"commerce-addresses\"><div><div>minified-view</div><div>false</div></div></div>"
             }
           }
         },
@@ -297,7 +312,8 @@
           "model": "commerce-cart",
           "plugins": {
             "da": {
-              "type": "key-value-block"
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"commerce-cart\"><div><div>checkout-url</div><div>/checkout</div></div><div><div>max-items</div><div>10</div></div></div>"
             }
           }
         },
@@ -308,7 +324,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-checkout-success\"><div><div>Order confirmation - no content to author</div></div></div>"
             }
           }
         },
@@ -319,7 +336,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-checkout\"><div><div>One-page checkout - no content to author</div></div></div>"
             }
           }
         },
@@ -330,7 +348,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-confirm-account\"><div><div>Account confirmation form - no content to author</div></div></div>"
             }
           }
         },
@@ -341,7 +360,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-create-account\"><div><div>Registration form - no content to author</div></div></div>"
             }
           }
         },
@@ -352,7 +372,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-create-password\"><div><div>Password update form - no content to author</div></div></div>"
             }
           }
         },
@@ -363,7 +384,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-create-return\"><div><div>Return request form - no content to author</div></div></div>"
             }
           }
         },
@@ -374,7 +396,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-customer-details\"><div><div>Customer details display - no content to author</div></div></div>"
             }
           }
         },
@@ -385,7 +408,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-customer-information\"><div><div>Customer account information - no content to author</div></div></div>"
             }
           }
         },
@@ -396,7 +420,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-forgot-password\"><div><div>Password reset form - no content to author</div></div></div>"
             }
           }
         },
@@ -407,7 +432,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-gift-options\"><div><div>Gift options display - no content to author</div></div></div>"
             }
           }
         },
@@ -418,7 +444,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-login\"><div><div>Sign-in form - no content to author</div></div></div>"
             }
           }
         },
@@ -428,7 +455,8 @@
           "model": "commerce-mini-cart",
           "plugins": {
             "da": {
-              "type": "key-value-block"
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"commerce-mini-cart\"><div><div>cart-url</div><div>/cart</div></div><div><div>checkout-url</div><div>/checkout</div></div></div>"
             }
           }
         },
@@ -439,7 +467,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-order-cost-summary\"><div><div>Order cost breakdown - no content to author</div></div></div>"
             }
           }
         },
@@ -450,7 +479,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-order-header\"><div><div>Order page header - no content to author</div></div></div>"
             }
           }
         },
@@ -461,7 +491,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-order-product-list\"><div><div>Order product list - no content to author</div></div></div>"
             }
           }
         },
@@ -472,7 +503,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-order-returns\"><div><div>Return tracking display - no content to author</div></div></div>"
             }
           }
         },
@@ -483,7 +515,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-order-status\"><div><div>Order status display - no content to author</div></div></div>"
             }
           }
         },
@@ -493,7 +526,8 @@
           "model": "commerce-orders-list",
           "plugins": {
             "da": {
-              "type": "key-value-block"
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"commerce-orders-list\"><div><div>minified-view</div><div>false</div></div></div>"
             }
           }
         },
@@ -504,7 +538,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-return-header\"><div><div>Return page header - no content to author</div></div></div>"
             }
           }
         },
@@ -514,7 +549,8 @@
           "model": "commerce-returns-list",
           "plugins": {
             "da": {
-              "type": "key-value-block"
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"commerce-returns-list\"><div><div>minified-view</div><div>false</div></div></div>"
             }
           }
         },
@@ -525,7 +561,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-search-order\"><div><div>Order search interface - no content to author</div></div></div>"
             }
           }
         },
@@ -536,7 +573,8 @@
           "plugins": {
             "da": {
               "rows": 1,
-              "columns": 2
+              "columns": 2,
+              "unsafeHTML": "<div class=\"commerce-shipping-status\"><div><div>Shipping status display - no content to author</div></div></div>"
             }
           }
         },
@@ -546,7 +584,230 @@
           "model": "commerce-wishlist",
           "plugins": {
             "da": {
-              "type": "key-value-block"
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"commerce-wishlist\"><div><div>start-shopping-url</div><div>/wishlist</div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Hero V2",
+          "id": "hero-v2",
+          "model": "hero-v2",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>picture:nth-child(1)>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>picture:nth-child(1)>img[alt]"
+                },
+                {
+                  "name": "title",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>h2:nth-child(2)"
+                },
+                {
+                  "name": "subtitle",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>h3:nth-child(3)"
+                },
+                {
+                  "name": "description",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>p:nth-child(4)"
+                },
+                {
+                  "name": "ctaLabel",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>p:nth-child(5)>a:nth-child(1)"
+                },
+                {
+                  "name": "ctaUrl",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>p:nth-child(5)>a:nth-child(1)[href]"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Quote",
+          "id": "quote",
+          "model": "quote",
+          "plugins": {
+            "da": {
+              "name": "quote",
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "quote",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>p:nth-child(1)"
+                },
+                {
+                  "name": "author",
+                  "selector": "div:nth-child(2)>div:nth-child(1)>p:nth-child(1)"
+                }
+              ],
+              "unsafeHTML": "<div class=\"quote\"><div><div><p>Design is not just what it looks like. Design is how it works.</p></div><div><p>Steve Jobs</p></div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Tabs",
+          "id": "tabs",
+          "model": "tabs",
+          "filter": "tabs",
+          "plugins": {
+            "da": {
+              "columns": 1,
+              "rows": 2
+            }
+          }
+        },
+        {
+          "title": "Tabs Item",
+          "id": "tabs-item",
+          "model": "tabs-item",
+          "plugins": {
+            "da": {
+              "columns": 0,
+              "rows": 2,
+              "fields": [
+                {
+                  "name": "name",
+                  "selector": "div:nth-child(1)>p:nth-child(1)"
+                },
+                {
+                  "name": "content",
+                  "selector": "div:nth-child(2)"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Video",
+          "id": "video",
+          "model": "video",
+          "plugins": {
+            "da": {
+              "name": "video",
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "videoUrl",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>p:nth-child(1)>a:nth-child(1)[href]"
+                },
+                {
+                  "name": "videoUrlText",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>p:nth-child(1)>a:nth-child(1)"
+                },
+                {
+                  "name": "posterImage",
+                  "selector": "div:nth-child(1)>div:nth-child(1)>picture:nth-child(2)>img:nth-child(3)[src]"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Blog Post",
+          "id": "blog-post",
+          "model": "blog-post",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"blog-post\"><div><div><h1>Blog Post Title</h1><p>Author Name - January 1, 2025</p></div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Blog Tiles",
+          "id": "blog-tiles",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"blog-tiles\"><div><div>blogtiles-limit</div><div>24</div></div><div><div>blogtiles-sort</div><div>newest</div></div><div><div>blogtiles-showdescription</div><div>true</div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Circle Carousel",
+          "id": "circle-carousel",
+          "model": "circle-carousel",
+          "plugins": {
+            "da": {
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"circle-carousel\"><div><div>alignment</div><div>center</div></div><div><div>autoplay</div><div>true</div></div><div><div>items-desktop</div><div>6</div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Hero CTA",
+          "id": "hero-cta",
+          "model": "hero-cta",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "unsafeHTML": "<div class=\"hero-cta\"><div><div><picture><img src=\"\" alt=\"Hero background image\"></picture></div><div><h1>Hero Headline</h1><p>Supporting subtitle or description.</p><p><a href=\"/page\">Primary CTA</a></p><p><a href=\"/page2\">Secondary CTA</a></p></div></div><div><div>herocta-height</div><div>tall</div></div><div><div>herocta-cta-anchor</div><div>bottom-left</div></div><div><div>interval</div><div>5000</div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Newsletter",
+          "id": "newsletter",
+          "model": "newsletter",
+          "plugins": {
+            "da": {
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"newsletter\"><div><div>align</div><div>center</div></div><div><div>background</div><div>neutral</div></div><div><div>Sign up for updates</div></div><div><div>Get the latest news and offers.</div></div><div><div>Your email address</div></div><div><div>Subscribe</div></div><div><div>By subscribing you agree to our <a href=\"/privacy\">Privacy Policy</a>.</div></div><div><div>You're subscribed!</div></div><div><div>Thanks for signing up. Check your inbox for a confirmation.</div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Promotional Hero",
+          "id": "promotional-hero",
+          "model": "promotional-hero",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "unsafeHTML": "<div class=\"promotional-hero\"><div><div><picture><img src=\"\" alt=\"Campaign image\"></picture></div><div><p>Campaign description highlighting the promotion.</p></div><div><a href=\"/shop\">Shop now</a></div></div><div><div><picture><img src=\"\" alt=\"Campaign image\"></picture></div><div><p>Campaign description highlighting the promotion.</p></div><div><a href=\"/shop\">Shop now</a></div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Search Bar",
+          "id": "search-bar",
+          "model": "search-bar",
+          "plugins": {
+            "da": {
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"search-bar\"><div><div>placeholder</div><div>Search Products</div></div><div><div>alignment</div><div>center</div></div><div><div>result-count</div><div>8</div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Store Locator",
+          "id": "store-locator",
+          "model": "store-locator",
+          "plugins": {
+            "da": {
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"store-locator\"><div><div>google-maps-api-key</div><div></div></div><div><div>default-view</div><div>split</div></div><div><div>search-radius</div><div>0</div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Top Banner",
+          "id": "top-banner",
+          "model": "top-banner",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "unsafeHTML": "<div class=\"top-banner\"><div><div>Free shipping on orders over $50</div><div></div><div><a href=\"/sale\">Shop the sale</a></div><div><a href=\"/stores\">Find a store</a></div></div></div>"
             }
           }
         }
@@ -562,7 +823,8 @@
           "model": "product-details",
           "plugins": {
             "da": {
-              "type": "key-value-block"
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"product-details\"><div><div>default-sku</div><div></div></div></div>"
             }
           }
         },
@@ -572,7 +834,8 @@
           "model": "product-list-page",
           "plugins": {
             "da": {
-              "type": "key-value-block"
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"product-list-page\"><div><div>url-path</div><div>/category</div></div><div><div>page-size</div><div>9</div></div></div>"
             }
           }
         },
@@ -582,7 +845,118 @@
           "model": "product-recommendations",
           "plugins": {
             "da": {
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"product-recommendations\"><div><div>rec-id</div><div>homepage-recs</div></div><div><div>current-sku</div><div></div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Product Teaser",
+          "id": "product-teaser",
+          "model": "product-teaser",
+          "plugins": {
+            "da": {
               "type": "key-value-block"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "custom-blocks-jg",
+      "title": "Custom Blocks (JG)",
+      "components": [
+        {
+          "title": "Hero (JPG)",
+          "id": "hero-jg",
+          "model": "hero-jg",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 1,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(1)>picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div:nth-child(1)>picture>img[alt]"
+                },
+                {
+                  "name": "heading",
+                  "selector": "div:nth-child(1)>h2"
+                },
+                {
+                  "name": "subtitle",
+                  "selector": "div:nth-child(1)>h3"
+                },
+                {
+                  "name": "text",
+                  "selector": "div:nth-child(1)>p:not(:last-child)"
+                },
+                {
+                  "name": "ctaText",
+                  "selector": "div:nth-child(1)>p:last-child>a"
+                },
+                {
+                  "name": "ctaUrl",
+                  "selector": "div:nth-child(1)>p:last-child>a[href]"
+                },
+                {
+                  "name": "textColor",
+                  "selector": "div:nth-child(2)>div:nth-child(2)"
+                },
+                {
+                  "name": "ctaButtonOpacity",
+                  "selector": "div:nth-child(3)>div:nth-child(2)"
+                }
+              ],
+              "unsafeHTML": "<div class=\"hero-jg\"><div><div><picture></picture><h2>Hero Title</h2><h3>Subtitle</h3><p>A short description of the hero section.</p><p><a href=\"#\">Learn More</a></p></div></div><div><div>text-color</div><div>#ffffff</div></div><div><div>cta-button-opacity</div><div>24</div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Cards (JPG)",
+          "id": "cards-jg",
+          "filter": "cards-jg",
+          "plugins": {
+            "da": {
+              "title": "Cards V3",
+              "rows": 1,
+              "columns": 5,
+              "unsafeHTML": "<div class=\"cards-jg\"><div><div><picture></picture></div><div>Card Title</div><div><p>Card body text goes here.</p></div><div>#f5f5f5</div><div>#333333</div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Product Teaser (JPG)",
+          "id": "product-teaser-jg",
+          "model": "product-teaser-jg",
+          "plugins": {
+            "da": {
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"product-teaser-jg\"><div><div>sku</div><div>YOUR-SKU-HERE</div></div><div><div>details-button</div><div>true</div></div><div><div>cart-button</div><div>true</div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Promotional Hero (JPG)",
+          "id": "promotional-hero-jg",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div class=\"promotional-hero-jg\"><div><div><picture></picture></div><div><h2></h2><p></p></div><div><p></p></div></div><div><div>cta-button-color</div><div></div></div><div><div>cta-text-color</div><div></div></div></div>"
+            }
+          }
+        },
+        {
+          "title": "Age Gate (JPG)",
+          "id": "age-gate-jg",
+          "model": "age-gate-jg",
+          "plugins": {
+            "da": {
+              "type": "key-value-block",
+              "unsafeHTML": "<div class=\"age-gate-jg\"><div><div>minimum-age</div><div>21</div></div><div><div>heading</div><div>Age Verification Required</div></div><div><div>subheading</div><div></div></div><div><div>input-label</div><div>Enter your date of birth</div></div><div><div>button-text</div><div>Submit</div></div></div>"
             }
           }
         }
